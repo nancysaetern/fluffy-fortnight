@@ -1,0 +1,100 @@
+* {
+        box-sizing: border-box;
+    }
+    body {
+        background: lightpink;
+    }
+    header h1 {
+        color: grey;
+        text-align: center;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        font-size: 60px;
+        font-family: Brush Script MT, cursive;
+    }
+    header h2 {
+        margin-top: 0px;
+        font-size: 20px;
+        text-align: center;
+    }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+    }
+    #searchbox {
+        display: inline;
+        width: 20%;
+        border-right: 2px black solid;
+    }
+    #weatherbox {
+        display: inline;
+        width: 80%;
+    }
+    #citychosen {
+        display: inline;
+        margin: 0px;
+        color: black;
+        font-size: 30px;
+        font-family: 'Days One'
+    }
+    #icon {
+        display: inline-block;
+    }
+    
+    #todaydate,
+    #forecastdate,
+    #forecastdate2,
+    #forecastdate3,
+    #forecastdate4,
+    #forecastdate5 {
+        margin: 0px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    #five {
+        margin: 0px;
+        color: black;
+        font-size: 30px;
+        font-family: 'Days One'
+    }
+    #fiveday {
+        display: flex;
+        flex-direction: row;
+    }
+    .daybox {
+        background-color: transparent;
+        display: inline;
+        margin: 20px;
+    }
+    
+    .daybox p {
+        color: black;
+    }
+    footer {
+        align-self: left;
+    }
+    .buttonclass {
+        background-color: pink;
+        display: block;
+    }
+    
+    @media screen and (max-width: 768px) {
+        #searchbox {
+            width: 30%;
+        }
+        #cityinput {
+            width: 50%
+        }
+        #weatherbox {
+            width: 50%;
+        }
+        #fiveday {
+            flex-direction: column;
+        }
+        #daybox {
+            margin: 0px;
+        }
+
+    }
